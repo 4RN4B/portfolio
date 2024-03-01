@@ -9,18 +9,14 @@ export default function HeaderSection() {
         <section>
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="col-span-7 place-self-center px-4 text-center sm:text-left">
-                    <h1 className="font-extrabold text-white mb-4 sm:text-5xl lg:text-6xl text-4xl">
+                    <h1 className="font-extrabold text-white mb-4 sm:text-4xl lg:text-5xl text-4xl">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
                             Hello, I&apos;m{" "}
                         </span>
                         <br></br>
                         <TypeAnimation
-                            sequence={[
-                                "Arnab Mondal",
-                                1000,
-                                "Full Stack Developer",
-                                1000,
-                            ]}
+                            className=""
+                            sequence={["Arnab Mondal", 1000, "Developer", 1000]}
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
@@ -40,10 +36,10 @@ export default function HeaderSection() {
                     </div>
                 </div>
                 <div className="col-span-5 place-self-center mt-5 lg:mt-0">
-                    <div className="rounded-full bg-[#181818] w-[250px] h-[200px] lg:w-[430px] lg:h-[370px] relative">
+                    <div className="rounded-full bg-[#181818] w-[300px] h-[250px] lg:w-[400px] lg:h-[370px] relative">
                         <Image
                             src="/images/homeImage.png"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[300px] h-[200px] lg:w-[400px] lg:h-[300px]"
                             alt="image"
                             width={500}
                             height={500}
